@@ -42,7 +42,7 @@
         .welded-ring {
             width: 12px;
             height: 12px;
-            background: #4a5568; /* لون الخشبة */
+            background: #4a5568; 
             border: 2px solid #cbd5e0;
             border-radius: 50%;
             position: absolute;
@@ -60,7 +60,7 @@
             height: 55px;
             background: #718096;
             position: absolute;
-            top: 8px; /* يبدأ من داخل الحلقة */
+            top: 8px; 
             z-index: 10;
         }
     </style>
@@ -85,8 +85,18 @@
         </div>
     </div>
 
+    <!-- Student & Teacher Names Section -->
+    <div class="bg-[#0f172a] py-2 px-4 text-center border-b border-white/5 shrink-0">
+        <div class="text-[11px] font-bold text-blue-300 mb-0.5">
+            إعداد الطالبة: نبراس آل بن سعيد - أول ٥
+        </div>
+        <div class="text-[10px] text-slate-400">
+            إشراف المعلمة: فرحة العبد رب النبي
+        </div>
+    </div>
+
     <!-- Main Game Area -->
-    <div class="flex-1 relative flex flex-col items-center justify-start p-4 min-h-0 pt-6">
+    <div class="flex-1 relative flex flex-col items-center justify-start p-4 min-h-0 pt-4">
         
         <!-- Question Box Top -->
         <div class="bg-[#1e293b] border-2 border-blue-500/50 rounded-2xl p-4 w-full max-w-[300px] shadow-2xl text-center mb-6 shrink-0">
@@ -94,9 +104,9 @@
             <div id="top-question-text" class="text-xl font-black text-white">20% من 392</div>
         </div>
 
-        <div class="relative w-full max-w-[260px] h-[200px] flex justify-center items-center shrink-0">
+        <div class="relative w-full max-w-[260px] h-[180px] flex justify-center items-center shrink-0">
             
-            <!-- Base Elements -->
+            <!-- Pillar & Base -->
             <div class="absolute bottom-4 w-24 h-2 bg-[#1f2943] rounded-full"></div>
             <div class="absolute bottom-6 w-2 h-32 bg-gradient-to-t from-[#2d3748] to-[#4a5568] rounded-full"></div>
             <div class="absolute top-[50px] w-5 h-5 bg-[#cbd5e0] rounded-full z-[60] border-[3px] border-[#4a5568] shadow-md"></div>
@@ -105,7 +115,7 @@
             <div id="beam-wrapper" class="absolute top-[58px] w-full beam-transition z-30" style="transform: rotate(-10deg); transform-origin: center center;">
                 <div class="w-full h-1.5 bg-gradient-to-b from-[#a0aec0] to-[#4a5568] rounded-full shadow-sm relative">
                     
-                    <!-- Left Welded Attachment (Integrated into the beam) -->
+                    <!-- Left Welded Attachment -->
                     <div id="anchor-left" class="welded-ring left-[10%]">
                         <div id="pan-left-container" class="pan-counter-rotation flex flex-col items-center" style="transform: rotate(10deg); transform-origin: center 6px;">
                             <div class="integrated-cord"></div>
@@ -116,7 +126,7 @@
                         </div>
                     </div>
 
-                    <!-- Right Welded Attachment (Integrated into the beam) -->
+                    <!-- Right Welded Attachment -->
                     <div id="anchor-right" class="welded-ring right-[10%]">
                         <div id="pan-right-container" class="pan-counter-rotation flex flex-col items-center" style="transform: rotate(10deg); transform-origin: center 6px;">
                             <div class="integrated-cord"></div>
@@ -185,7 +195,7 @@
         const questions = [
             { q: "20% من 392", a: 80, hint: "قرب 392 إلى 400. العشرون بالمئة هي الخُمس (1/5). 400 ÷ 5 = 80" },
             { q: "78% من 112", a: 88, hint: "قرب 78% إلى 80% وقرب 112 إلى 110. 80% من 110 تساوي 88" },
-            { q: "52% من 395", a: 200, hint: "قرب 52% إلى 50% (النصف) وقرب 395 إلى 400. نصف الـ 400 هو 200" },
+            { q: "52% من 295", a: 150, hint: "قرب 52% إلى 50% (النصف) وقرب 295 إلى 300. نصف الـ 300 هو 150" },
             { q: "79% من 88", a: 72, hint: "قرب 79% إلى 80% وقرب 88 إلى 90. 80% من 90 تساوي 72" }
         ];
 
